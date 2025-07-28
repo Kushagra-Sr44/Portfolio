@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="logo.png" alt="logo" height="35px" width="60px"></div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+    <section id="home">
+        <div class="hero">
+            <img src="background.png" alt="background image" class="hero-bg" />
+            <div class="data">
+                <h1>Hello, I'm a Programmer.</h1>
+                <h5>WELCOME TO MY PORTFOLIO</h5>
+                <button><a href="#projects">View My Work</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p style="text-align:center; font-size: large;">Hi! I'm Kushagra Srivastava, a B.Tech student with a growing
+            passion for web
+            development and programming. My main expertise lies in front-end web technologies, including HTML, CSS, and
+            JavaScript, which I use to bring clean, interactive designs to life. I'm also well-versed in Java
+            programming and have recently begun diving into Data Structures and Algorithms (DSA) to strengthen my coding
+            foundation. I believe in constant learning and enjoy solving real-world problems through creative,
+            user-friendly interfaces. Whether it's designing responsive layouts or debugging code, I'm always eager to
+            sharpen my skills and explore new challenges.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill"><img src="html.png" alt="html">HTML</div>
+            <div class="skill"><img src="css.png" alt="css">CSS</div>
+            <div class="skill"><img src="js.png" alt="js">JavaScript</div>
+            <div class="skill"><img src="java.png" alt="java">Java</div>
+            <div class="skill"><img src="python.png" alt="python">Python</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-list">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Calculator</p>
+                 <img src="cal.png"  height="300px" width="250px"   alt="Calculator">
+                <button><a href="https://kushagra-sr44.github.io/Calculator/">Visit</a> </button>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Login form</p>
+                <img src="login.png"  height="300px" width="250px"  alt="Login form">
+                <button><a href="https://kushagra-sr44.github.io/Login-Form/">Visit</a> </button>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Tic tac toe game</p>
+                 <img src="game.png" height="300px" width="250px"  alt="Tic tac toe game">
+                <button><a href="https://kushagra-sr44.github.io/Tic-Tac-Toe-Game/">Visit</a> </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <p>&copy; 2025 Kushgra Srivastava. All rights reserved.</p>
+            </div>
+            <div class="footer-section">
+                <p>Contact: <a href="mailto:kushagra@gmail.com">kushagra@gmail.com</a></p>
+
+
+            </div>
+            <div class="footer-section">
+                <a href="https://www.linkedin.com/in/kushagra-srivastava-312077330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank">
+                    <i class="fa-brands fa-linkedin fa-xl" style="color: #0077b5;"></i>Linkedien</a>
+                <a href="https://github.com/Kushagra-Sr" target="_blank">
+                    <i class="fa-brands fa-square-github fa-xl"></i>Github
+                </a>
+                <a href="https://leetcode.com/u/Kushagrasr/" target="_blank">
+                    <img src="leetcode.svg" alt="Leetcode">Leetcode
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
