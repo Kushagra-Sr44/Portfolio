@@ -1,17 +1,11 @@
-
 const hamburger = document.getElementById('hamburger');
-const menu = document.querySelector('.menu');
-hamburger.addEventListener('click', function () {
-    const hamIcon = this.querySelector('.hamburger-icon');
-    const crossIcon = this.querySelector('.cross-icon');
-    if (hamIcon.style.display === "none") {
-        hamIcon.style.display = "inline-block"
-        menu.style.display = "none"
-        crossIcon.style.display = "none"
-    }
-    else {
-        crossIcon.style.display = "inline-block"
-        hamIcon.style.display = "none"
-        menu.style.display = "block"
-    }
+const navLinks = document.getElementById('navLinks');
+const hamIcon = hamburger.querySelector('.hamburger-icon');
+const crossIcon = hamburger.querySelector('.cross-icon');
+
+hamburger.addEventListener('click', () => {
+    const isVisible = navLinks.style.display === 'flex';
+    navLinks.style.display = isVisible ? 'none' : 'flex';
+    hamIcon.style.display = isVisible ? 'inline-block' : 'none';
+    crossIcon.style.display = isVisible ? 'none' : 'inline-block';
 });
